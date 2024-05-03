@@ -10,7 +10,7 @@ module.exports = withModuleFederationPlugin({
     "./Module":
       "./projects/first/src/app/first-feature/first-feature.module.ts",
   },
-
+  sharedMappings: ["shared-lib"],
   shared: {
     ...shareAll({
       singleton: true,

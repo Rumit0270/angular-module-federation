@@ -4,9 +4,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class LogLibService {
+  private _count = 0;
+
   constructor() {}
 
   log(message: string) {
-    console.log('LogLibService: ', message);
+    console.log(`LogLibService: ${this._count}`, message);
+    this._count++;
   }
 }

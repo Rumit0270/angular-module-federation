@@ -1,11 +1,12 @@
-import { Component } from "@angular/core";
-import { ActivatedRoute, Router } from "@angular/router";
+import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
-import { LogLibService } from "shared-lib";
+import { LogLibService } from 'shared-lib';
 
 @Component({
-  selector: "app-home",
-  templateUrl: "./home.component.html",
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  host: { app: 'first' },
 })
 export class HomeComponent {
   constructor(
@@ -15,7 +16,7 @@ export class HomeComponent {
   ) {}
 
   handleClick() {
-    this._logLibService.log("Loading todos...");
-    this._router.navigate(["todos"], { relativeTo: this._route });
+    this._logLibService.log('Loading todos...');
+    this._router.navigate(['todos'], { relativeTo: this._route });
   }
 }

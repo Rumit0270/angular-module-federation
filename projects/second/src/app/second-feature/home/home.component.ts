@@ -5,6 +5,7 @@ import { LogLibService } from 'shared-lib';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
+  host: { app: 'second' },
 })
 export class HomeComponent {
   constructor(

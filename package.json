@@ -10,7 +10,8 @@
     "start:container": "ng serve container --port 5000",
     "start:first": "ng serve first --port 5001",
     "start:second": "ng serve second --port 5002",
-    "start:all": "npm run build:shared-lib &&  concurrently \"npm run start:container\" \"npm run start:first\" \"npm run start:second\" ",
+    "start:third": "cd projects/third && npm start",
+    "start:all": "npm run build:shared-lib &&  concurrently \"npm run start:container\" \"npm run start:first\" \"npm run start:second\" \"npm run start:third\" ",
     "build:shared-lib": "ng build --project=shared-lib"
   },
   "private": true,
@@ -43,7 +44,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^16.2.0",
-    "typescript": "~5.1.3",
-    "ngx-build-plus": "^16.0.0"
+    "ngx-build-plus": "^16.0.0",
+    "typescript": "~5.1.3"
   }
 }
