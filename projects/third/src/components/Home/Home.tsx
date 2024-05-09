@@ -11,6 +11,13 @@ const Home = () => {
         <img src={logo} alt="React Logo" />
       </h1>
       <Link to="user-list">Show Users</Link>
+      {/* 
+      <button
+        type="button"
+        onClick={() => (window.location.href = "/first/todos?id=1")}
+      >
+        Show Todos
+      </button> */}
     </div>
   );
 };
